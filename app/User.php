@@ -2,38 +2,22 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
+class User extends Model
 {
-    use Notifiable;
-
     /**
-     * The attributes that are mass assignable.
+     * 使用批量赋值的属性（白名单）
      *
      * @var array
      */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
+    protected $fillable = [];
 
     /**
-     * The attributes that should be hidden for arrays.
+     * 不使用批量赋值的字段（黑名单）
      *
      * @var array
      */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+    protected $guarded = ['id']; // ['*'] 黑名单属性为 *，即所有字段都不会应用批量赋值
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
 }
