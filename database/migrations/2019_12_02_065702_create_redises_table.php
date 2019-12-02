@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFlightsTable extends Migration
+class CreateRedisesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateFlightsTable extends Migration
      */
     public function up()
     {
-        Schema::create('flights', function (Blueprint $table) {
+        Schema::create('redises', function (Blueprint $table) {
+            $table->engine = 'InnoDB';//指定表的存储引擎,默认为MyISAM
             $table->bigIncrements('id');
-            $table->string('name')->default('');
-            $table->boolean('delayed')->default(0);
+            $table->string('content')->default('');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateFlightsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('flights');
+        Schema::dropIfExists('redises');
     }
 }

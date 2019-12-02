@@ -36,4 +36,11 @@ Route::middleware(['check.login'])->group(function () {
     Route::post('/flight/save', 'Web\FlightController@save');
     /* match用法 */
     //Route::match(['get', 'post'], '/flight/update', 'Web\FlightController@insert');
+
+    //测试redis
+    Route::match(['get', 'post'], '/redis/list', 'Web\RedisController@getList');
+    Route::post('/redis/update', 'Web\RedisController@update');
+    Route::get('/redis/updateForm', 'Web\RedisController@updateForm');
+    Route::get('/redis/{id}', 'Web\RedisController@getDetail');
+
 });
