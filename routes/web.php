@@ -40,7 +40,9 @@ Route::middleware(['check.login'])->group(function () {
     //测试redis
     Route::match(['get', 'post'], '/redis/list', 'Web\RedisController@getList');
     Route::post('/redis/update', 'Web\RedisController@update');
+    Route::post('/redis/store', 'Web\RedisController@store');
     Route::get('/redis/updateForm', 'Web\RedisController@updateForm');
     Route::get('/redis/{id}', 'Web\RedisController@getDetail');
+    Route::get('/exception', 'Web\RedisController@testException');
 
 });
