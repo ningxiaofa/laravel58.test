@@ -45,4 +45,7 @@ Route::middleware(['check.login'])->group(function () {
     Route::get('/redis/{id}', 'Web\RedisController@getDetail');
     Route::get('/exception', 'Web\RedisController@testException');
 
+    //测试邮件
+    Route::get('/ship/{orderId}', 'Web\OrderController@ship');
+
 });

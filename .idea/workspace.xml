@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612205be-7699-4c67-9d9a-42aef3839ca5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/laravel58.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel58.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_28_111422_create_flights_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_28_111422_create_flights_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,6 +107,11 @@
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
   <component name="ProjectId" id="1UETm13xay6tRSsJOtOipnQBvMk" />
@@ -121,14 +122,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\phpstudy_pro\WWW\laravel58.test\resources\views\emails" />
+      <recent name="G:\phpstudy_pro\WWW\laravel58.test\resources\views" />
+      <recent name="G:\phpstudy_pro\WWW\laravel58.test\app\Http\Controllers\Web" />
+      <recent name="G:\phpstudy_pro\WWW\roast.test\resources\views\flight" />
+      <recent name="G:\phpstudy_pro\WWW\roast.test\resources\views" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\phpstudy_pro\WWW\roast.test\resources\views\flight" />
       <recent name="G:\phpstudy_pro\WWW\roast.test\resources\views" />
       <recent name="G:\phpstudy_pro\WWW\roast.test\app\Http\Controllers\Web" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\phpstudy_pro\WWW\roast.test\resources\views\flight" />
-      <recent name="G:\phpstudy_pro\WWW\roast.test\resources\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -164,6 +168,7 @@
       <workItem from="1575255762095" duration="8421000" />
       <workItem from="1575266800426" duration="4349000" />
       <workItem from="1575275225541" duration="6940000" />
+      <workItem from="1575596712526" duration="6373000" />
     </task>
     <servers />
   </component>
