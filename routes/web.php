@@ -44,9 +44,12 @@ Route::middleware(['check.login'])->group(function () {
     Route::get('/redis/updateForm', 'Web\RedisController@updateForm');
     Route::get('/redis/{id}', 'Web\RedisController@getDetail');
     Route::get('/exception', 'Web\RedisController@testException');
-
+  
     //测试laravel mail and queue [use database first]
     Route::get('/index', 'Web\PostController@index');
     Route::post('/posts', 'Web\PostController@store');
+  
+    //测试邮件
+    Route::get('/ship/{orderId}', 'Web\OrderController@ship');
 
 });
